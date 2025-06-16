@@ -1,0 +1,172 @@
+* {
+      box-sizing: border-box;
+      margin:0;
+      padding:0;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #f5f7fa 0%, #e4edf5 100%);
+      padding: 20px;
+      min-height: 100vh;
+    }
+    body {
+    background-image: url('parabhani-zp.jpg');
+    background-attachment:fixed;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100vh; 
+    margin: 0;
+}
+    
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    
+    header {
+      text-align: center;
+      margin: 30px 0;
+      padding: 20px;
+      background: linear-gradient(90deg, #0a416600 0%, #1a6e9c 100%);
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    h1 {
+      color: #ffffff;
+      font-size: 2.8rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      padding: 10px;
+    }
+    
+    .subtitle {
+      color: #c3e6ff;
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+    
+    .decisions-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+    
+    .decision {
+      background: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+      display: flex;
+      flex-direction: column;
+      transition: all 0.3s ease;
+      aspect-ratio: 1/1; /* Creates a perfect square */
+      overflow: hidden;
+      border: 1px solid #e1e8ed;
+    }
+    
+    .decision:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+      border-color: #0a4166;
+    }
+    
+    .decision-content {
+      padding: 25px;
+      flex-grow:1.5;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 50px 50px 50px black ;
+    }
+    
+    .decision-number {
+      display: inline-block;
+      background: #0a4166;
+      color: white;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 36px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      font-size: 1.1rem;
+    }
+    
+    .decision h2 {
+      color: #0a4166;
+      font-size: 1.35rem;
+      margin-bottom: 15px;
+      line-height: 1.4;
+      flex-grow: 1.5;
+    }
+    
+    .decision-link {
+      background: #27ae60;
+      color: white !important;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      display: block;
+      margin-top: 10px;
+      box-shadow: 0 4px 6px rgba(39, 174, 96, 0.2);
+    }
+    
+    .decision-link:hover {
+      background: #219653;
+      text-decoration: none;
+      transform: scale(1.03);
+      box-shadow: 20 20px 20px rgba(0, 0, 0, 0.3);
+    }
+    
+    .decision-link:active {
+      transform: scale(0.98);
+    }
+    
+    .decision-link i {
+      margin-left: 8px;
+      font-size: 0.9rem;
+    }
+    
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      padding: 20px;
+      color: #f6f6f6;
+      font-size: 1rem;
+      border-top: 1px solid #d1e0e9;
+    }
+    
+    @media (max-width: 1199px) {
+      .decisions-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    
+    @media (max-width: 899px) {
+      .decisions-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      h1 {
+        font-size: 2.3rem;
+      }
+    }
+    
+    @media (max-width: 599px) {
+      .decisions-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      h1 {
+        font-size: 1.9rem;
+      }
+      
+      .subtitle {
+        font-size: 1rem;
+      }
+    }
